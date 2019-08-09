@@ -1,5 +1,6 @@
 body {
     font-size: 2em;
+    font-family: 'Forum', cursive;
 }
 
 /*HEADER*/
@@ -27,16 +28,24 @@ li {
 
 a {
     text-decoration: none;
-    color: #F7F9DD;
-    font-family: 'Beth Ellen', cursive;
+    color: #F7F9DD;    
+    text-transform: uppercase;
 }
 
 .hero__img {
     width: 100%;
 }
 
-footer {
+.ana__footer {
     background: #0C4441;
+    font-size: 0.5em;
+    padding: 10px;
+}
+
+.pachi {
+    color: #F7F9DD;
+    text-align: center;
+    margin: 20px;
 }
 
 
