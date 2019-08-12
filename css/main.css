@@ -14,6 +14,10 @@ h1 {
     padding: 20px;
 }
 
+p {
+    padding: 20px;
+}
+
 /*HEADER*/
 header {
     background: #0C4441;
@@ -47,6 +51,21 @@ a {
     width: 100%;
 }
 
+
+/*CONTACT*/
+.contact__img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.ana__email {
+    color: #0C4441;
+    text-transform: lowercase;
+}
+.ana__email:hover {
+    background: #F7F9DD;
+}
 
 /* FOOTER*/
 .ana__footer {
