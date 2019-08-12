@@ -89,12 +89,39 @@ a {
 
 /* DESKTOP */
 @media (min-width: 1281px) {
-nav {
-    float: right;
-    padding: 20px;
-}
+    h1 {
+        font-size: 3em;
+        padding: 40px;
+    }
+    
+    p {
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+    .ana {
+        height: 150px;
+        background: #0C4441;
+    }
+    
+    nav {
+        float: right;
+        padding: 20px;
+    }
+    
+    .logo {
+        max-width: 200px;
+        position: absolute;
+        left: 10px;
+        top: 5px;
+    }
 
-.logo {
-    max-width: 200px;
-}
+    .main__welcome {
+        max-width: 70%;
+        margin: auto;
+    }
+
+    .ana__nav-li {
+        font-size: 2em;
+        padding: 30px;
+    }
 }
