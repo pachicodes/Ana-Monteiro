@@ -71,18 +71,18 @@ a {
 .ana__footer {
     background: #0C4441;
     font-size: 1em;
-}
-
-.pachi {
     color: #F7F9DD;
     text-align: center;
-    margin: 10px;
+}
+.ana__email-footer {
+    color: #F7F9DD;
+    text-transform: lowercase;
+}
+.ana__email-footer:hover {
+    background: rgb(32, 107, 103);
 }
 
-.services__list-item {
-    list-style-type: circle;
-    display: block;
-}
+
 
 
 
