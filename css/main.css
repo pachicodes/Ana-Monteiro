@@ -18,7 +18,6 @@ p {
     padding: 20px;
 }
 
-/*HEADER*/
 header {
     background: #0C4441;
     color: #F7F9DD;
@@ -51,6 +50,21 @@ a {
     width: 100%;
 }
 
+.ana__footer {
+    background: #0C4441;
+    font-size: 1em;
+    color: #F7F9DD;
+    text-align: center;
+}
+
+.ana__email-footer {
+    color: #F7F9DD;
+    text-transform: lowercase;
+}
+
+.ana__email-footer:hover {
+    background: rgb(32, 107, 103);
+}
 
 /*CONTACT*/
 .contact__img{
@@ -59,31 +73,22 @@ a {
     margin-right: auto;
     width: 50%;
 }
+
 .ana__email {
     color: #0C4441;
     text-transform: lowercase;
 }
+
 .ana__email:hover {
     background: #F7F9DD;
 }
 
-/* FOOTER*/
-.ana__footer {
-    background: #0C4441;
-    font-size: 1em;
-    color: #F7F9DD;
-    text-align: center;
+/*SERVICES*/
+.services__list-item {
+    display: block;
+    font-size: 1.25em;
+    margin-left: 50px;
 }
-.ana__email-footer {
-    color: #F7F9DD;
-    text-transform: lowercase;
-}
-.ana__email-footer:hover {
-    background: rgb(32, 107, 103);
-}
-
-
-
 
 
 
