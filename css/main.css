@@ -30,39 +30,43 @@ nav {
     text-align: center;
 }
 
-.ana__nav-text {
+.logo {
+    margin: 0px;
+}
+
+.logo__img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+
+.logo__subtitle {
     color: #F7F9DD;
     text-align: center;
-    margin: 0;
-    padding: 20px;
+    font-size: 12px;
 }
 
-.ana__logo {
+.header {
     margin-bottom: 0px;
-    padding-bottom: 0px; 
+    margin-top: 0px;
+    padding-bottom: 0px;
 }
 
-.ana__header {
-    padding-top: 0px;
-}
-
-.logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%; 
-}
-
-li {
+.header__li {
     display: inline;
     padding: 10px;
     font-size: 0.85em;
 }
 
-a {
+.header__a, .pachi__com {
     text-decoration: none;
     color: #F7F9DD;    
     text-transform: capitalize;
+}
+.footer__email {
+    text-decoration: none;
+    color: #F7F9DD;
 }
 
 .p_text {
@@ -70,7 +74,7 @@ a {
 }
 
 .hero__img {
-    width: 50vh;
+    width: 100%;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -83,13 +87,10 @@ footer {
     color: #F7F9DD;
     text-align: center;
     width: 100%;
-    padding: 10px;
     font-size: 0.85em;
-}
-
-.ana__email-footer {
     color: #F7F9DD;
     text-transform: lowercase;
+    height: 135px;
 }
 
 a:hover {
@@ -131,12 +132,12 @@ a:hover {
     padding: 30px;
 }
 
-.ana__email {
+.header__email {
     color: #0C4441;
     text-transform: lowercase;
 }
 
-.ana__email:hover {
+.header__email:hover {
     background: #F7F9DD;
 }
 
@@ -166,7 +167,7 @@ a:hover {
         padding: 20px;
     }
 
-    .ana {
+    .header {
         background: #0C4441;
         height: 200px;
     }
@@ -175,7 +176,7 @@ a:hover {
         margin: 0px;        
     }
     
-    .logo {
+    .logo__img {
         max-width: 200px;
         position: absolute;
         left: 80px;
@@ -191,14 +192,14 @@ a:hover {
         margin: auto;
     }
 
-    .ana__nav-text {
+    .logo__subtitle {
         font-size: 2em;
         padding: 20px;
         margin-top: 3px; 
         margin-bottom: 40px;
     }
 
-    .ana__nav-li {
+    .header__li {
         font-size: 2em;
         padding: 10px;
     }
