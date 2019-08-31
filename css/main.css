@@ -2,6 +2,7 @@ body {
     font-size: 1em;
     line-height: 1.5em;
     font-family: 'Forum', cursive;
+    background-color: #ebebeb;
 }
 
 div {
@@ -20,7 +21,19 @@ p {
     padding: 0;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.section {
+    flex: 1;
+}
+
 header {
+    flex: 1;
     background: #0C4441;
     color: #F7F9DD;
     width: 100%;
@@ -32,6 +45,7 @@ nav {
 
 .logo {
     margin: 0px;
+    padding: 0px;
 }
 
 .logo__img {
@@ -51,6 +65,12 @@ nav {
     margin-bottom: 0px;
     margin-top: 0px;
     padding-bottom: 0px;
+    max-height: 170px;
+}
+
+.header__nav-ul {
+    padding-top: 5px;
+    padding-bottom: 5px;  
 }
 
 .header__li {
@@ -59,15 +79,17 @@ nav {
     font-size: 0.85em;
 }
 
-.header__a, .pachi__com {
+.header__a, .pachi__com, .footer__email {
     text-decoration: none;
     color: #F7F9DD;    
-    text-transform: capitalize;
 }
-.footer__email {
-    text-decoration: none;
-    color: #F7F9DD;
+
+.contact__email {
+    color: #0C4441;
 }
+.contact__email:hover{
+    background: #F7F9DD;
+} 
 
 .p_text {
     text-indent: 30px;
@@ -80,27 +102,40 @@ nav {
     margin-left: auto;
 }
 
-
 footer {
+    flex: 1;
     background: #0C4441;
+    width: 100%;
+    text-align: center;
     font-size: 1em;
     color: #F7F9DD;
-    text-align: center;
-    width: 100%;
-    font-size: 0.85em;
-    color: #F7F9DD;
-    text-transform: lowercase;
-    height: 135px;
+    max-height: 150px;
 }
 
-a:hover {
+.footer__text {
+    padding: 8px;
+}
+
+.footer__email:hover {
     background: rgb(32, 107, 103);
+}
+
+.card {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 3px;
+    background-color: #fff;
+    padding: .8em;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .pachi   {
     text-transform: lowercase;
-    font-size: 0.75em;
-    float: right;
+    font-size: 0.85em;
+    padding: 0px;
 }
 
 /*ABOUT*/
@@ -132,21 +167,15 @@ a:hover {
     padding: 30px;
 }
 
-.header__email {
-    color: #0C4441;
-    text-transform: lowercase;
-}
-
-.header__email:hover {
-    background: #F7F9DD;
-}
-
 /*SERVICES*/
+.services__list {    
+    list-style-type: disc;
+}
 .services__list-item {
     display: block;
     font-size: 1.25em;
     margin-left: 50px;
-    list-style-type: disc;
+    display: list-item;
 }
 
 
