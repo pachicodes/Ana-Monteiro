@@ -39,33 +39,12 @@ header {
     width: 100%;
 }
 
+.header__a {
+    text-transform: capitalize;
+}
+
 nav {
     text-align: center;
-}
-
-.logo {
-    margin: 0px;
-    padding: 0px;
-}
-
-.logo__img {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 50%;
-}
-
-.logo__subtitle {
-    color: #F7F9DD;
-    text-align: center;
-    font-size: 12px;
-}
-
-.header {
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-bottom: 0px;
-    max-height: 170px;
 }
 
 .header__nav-ul {
@@ -93,6 +72,14 @@ nav {
 
 .p_text {
     text-indent: 30px;
+}
+
+/*HERO*/
+.logo {
+    display: block;
+    position: absolute;
+    right: 5px;
+    width: 30%;
 }
 
 .hero__img {
