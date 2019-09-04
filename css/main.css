@@ -1,7 +1,7 @@
 body {
     font-size: 1em;
     line-height: 1.5em;
-    font-family: 'Forum', cursive;
+    font-family: 'Livvic', sans-serif;
     background-color: #ebebeb;
 }
 
@@ -12,8 +12,9 @@ div {
 
 h1 {
     font-size: 1.5em;
-    color: #0C4441;
+    color: #105852;
     padding: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -24,7 +25,6 @@ p {
 .wrapper {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: space-between;
 }
 
@@ -34,8 +34,8 @@ p {
 
 header {
     flex: 1;
-    background: #0C4441;
-    color: #F7F9DD;
+    background: #105852;
+    color: #FAF7D6;
     width: 100%;
 }
 
@@ -48,81 +48,44 @@ nav {
 }
 
 .header__nav-ul {
-    padding-top: 5px;
-    padding-bottom: 5px;  
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 35px;  
 }
 
 .header__li {
     display: inline;
-    padding: 10px;
+    padding-left: 25px;
     font-size: 0.85em;
 }
 
-.header__a, .pachi__com, .footer__email {
+.header__a, .pachi__com {
     text-decoration: none;
-    color: #F7F9DD;    
+    color: #FAF7D6;    
 }
 
-.contact__email {
-    color: #0C4441;
+.header__a:hover, .pachi__com:hover {
+    background: rgb(32, 107, 103);
 }
-.contact__email:hover{
-    background: #F7F9DD;
-} 
 
 .p_text {
     text-indent: 30px;
 }
 
-/*HERO*/
 .logo {
     display: block;
-    position: absolute;
-    right: 5px;
-    width: 30%;
-}
-
-.hero__img {
-    width: 100%;
-    display: block;
+    padding-left: 10px;
+    width: 65px;
     margin-right: auto;
-    margin-left: auto;
+    transform: translateY(-35px);
 }
 
-footer {
-    flex: 1;
-    background: #0C4441;
-    width: 100%;
-    text-align: center;
-    font-size: 1em;
-    color: #F7F9DD;
-    max-height: 150px;
-}
-
-.footer__text {
-    padding: 8px;
-}
-
-.footer__email:hover {
-    background: rgb(32, 107, 103);
-}
-
-.card {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    border-radius: 3px;
-    background-color: #fff;
-    padding: .8em;
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-
-.card:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-.pachi   {
-    text-transform: lowercase;
-    font-size: 0.85em;
-    padding: 0px;
+.hero{
+    height: 50vh;
+    background-image: url(/img/newborn01.jpg);
+    background-position: top left -40px;
+    background-size: cover;
 }
 
 /*ABOUT*/
@@ -131,7 +94,9 @@ footer {
     margin-right: auto;
     margin-left: auto; 
     width: 50%;
-    border-radius: 50%;
+    border-radius: 10%;
+    border: solid 2px #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .main__about {
@@ -141,11 +106,12 @@ footer {
     margin: 30px;    
 }
 
-
 /*CONTACT*/
 .main__contact {
     text-align: center;
+    color: #105852;
 }
+
 .contact__img{
     display: block;
     margin-left: auto;
@@ -154,79 +120,217 @@ footer {
     padding: 30px;
 }
 
+.contact__email {
+    color: #105852;
+}
+
+.contact__email:hover{
+    background: #FAF7D6;
+} 
+
 /*SERVICES*/
 .services__list {    
     list-style-type: disc;
 }
+
 .services__list-item {
     display: block;
     font-size: 1.25em;
     margin-left: 50px;
     display: list-item;
+    text-align: start;
 }
 
+.main {
+    background-color: #105852;
+    color: #FAF7D6;
+    text-align: center;         
+}
 
+.services__h1 {
+    color: #FAF7D6;  
+}
 
-/* DESKTOP */
-@media (min-width: 1281px) {
-    h1 {
-        font-size: 3em;
-        padding: 40px;
-    }
-    
-    p {
+.card {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 3px;
+    background-color: #ffffff;
+    padding: .8em;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    text-align: center;
+    color: #105852;
+}
+
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+footer {
+    flex: 1;
+    background: #105852;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    color: #FAF7D6;
+    max-height: 150px;
+}
+
+.footer__text {
+    padding: 8px;
+}
+
+.pachi   {
+    text-transform: lowercase;
+    font-size: 0.85em;
+    padding: 0px;
+}
+
+/* TABLET */
+@media (min-width: 540px) and (max-width: 1280px) {
+    body {
         font-size: 1.5em;
-        line-height: 2em;
     }
 
-    nav {
-        padding: 20px;
+    .card {
+        max-width: 800px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
-    .header {
-        background: #0C4441;
-        height: 200px;
+    .about__img {
+        max-width: 30%;
     }
 
-    div {
-        margin: 0px;        
-    }
-    
-    .logo__img {
-        max-width: 200px;
-        position: absolute;
-        left: 80px;
-        top: 5px;
+    .logo {
+        width: 150px;
+        transform: translateY(-96px);
+        padding-left: 25px;
     }
 
-    .hero__img {
-        padding: 20px;
-    }
-
-    .main__welcome {
-        max-width: 70%;
-        margin: auto;
-    }
-
-    .logo__subtitle {
-        font-size: 2em;
-        padding: 20px;
-        margin-top: 3px; 
-        margin-bottom: 40px;
+    .header__nav-ul {
+        height: 100px;
     }
 
     .header__li {
+        padding-left: 70px;
+        font-size: 1em;
+    }
+
+}
+
+/* DESKTOP */
+@media (min-width: 1281px) {
+    .header__a {
         font-size: 2em;
-        padding: 10px;
+        padding: 20px;
+    }
+
+    .card {
+        max-width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 30px;
+    }
+
+    .about__img {
+        max-width: 30%;
+        margin-top: 60px;
+    }
+
+    .main {
+        padding-bottom: 50px;
+    }
+
+    .main__contact {
+        padding: 60px;
     }
 
     .main__container {
-        max-width: 90%;
+        display: flex;
+        align-items: center;
+        padding-bottom: 60px;
     }
 
-    .about__img {   
-        width: 30%;
-        border-radius: 50%;
-        float: right;
+    .main__welcome {
+        margin-top: -250px;
+    }
+
+    .main__welcome.card {
+        background-color: rgba(255,255,255,.3);
+        margin-right: 60px;
+    }
+
+    .main__services {
+        max-width: 100%; 
+        text-align: center;
+        font-size: 1.5em; 
+        line-height: 1.5em;
+    }
+
+    .newborn {
+        width: 40%;
+        height: 320px;
+        margin-left: 5%;
+    }
+
+    .newborn.card, .doula.card {
+        height: auto;
+    }
+
+    .doula {
+        width: 40%;
+        height: 320px;
+        margin-right: 5%;
+    }
+    
+    .logo {
+        width: 200px;
+        transform: translate(50px, -115px)
+    }
+
+    .header__nav-ul {
+        height: 120px;
+    }
+
+    .hero{
+        height: 60vh;
+        margin-right: auto;
+        margin-left: auto;
+        background-image: url(/img/newborn01.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: bottom;    
+    }
+
+    h1 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 22px;
+        line-height: 1.5em;
+    }
+
+    .p__subtitle {
+        font-weight: bold;
+         margin: 20px auto;
+        text-align: left;
+        padding-left: 30px;
+        border: solid 2px;
+        border-left: 0;
+        border-right: 0;
+        padding: 10px 0;
+        text-indent: 0;
+        margin: 20px 30px;
+    }
+
+    .services__offered {
+        display: flex;
+    }
+
+    .pachi__com {
+        display: block;
+        padding: 1em;
     }
 }
